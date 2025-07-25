@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(234, 233, 233);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body,html{
+    min-height: 100vh;
+    /* overflow: hidden; */
+}
+
+.main{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.container{
+    max-width: 350px;
+    min-width: 200px;
+    border-radius: 20px;
+    margin: 6rem auto;
+    /* height: 35rem; */
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.top-box{
+    margin: 20px 0;
+    background-color: #6583d4;
+    width: 30rem;
+    top: -130px;
+    left: -18px;
+    position: absolute;
+    height: 15rem;
+    border-radius: 50px;
+    transform: rotate(-13deg);
+    /* z-index: -1; */
+}
+
+.profile{
+    display: flex;
+    position:absolute;
+    top: 2rem;
+    left: 1.7rem;
+    align-items: center;
+    background-color: #6583d4;
+    gap: 15px;
+}
+.profile img{
+    width: 80px;
+    width: clamp(80px, 3vw, 100px);
+    background-color: #728dd7;
+    border:2px solid #728dd7;
+    border-radius: 100%;
+}
+.details h2, .details p{
+    background-color: #6583d4;
+    color: white;
+    /* font-size: clamp(1rem, 2vw, 1.6rem); */
+}
+.details h2{
+    font-size: clamp(0.9rem, 2vw, 1rem);
+}
+.details p{
+    font-size: clamp(0.9rem, 3vw, 1rem);
+}
+.branch{
+    margin: 12rem auto 0 auto;
+    width: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+    background-color: #628cff;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.branch h2, .branch h4{
+    background-color: #628cff;
+}
+
+.activity{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    background-color: white;
+    color: rgb(63, 61, 61);
+    justify-content: center;
+}
+
+.activity > div{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 1rem;
+    background-color: white;
+    padding: 10px;
+    transition: all 0.12s ease-in;
+}
+.activity > div i , .activity > div h3{
+    background-color: white;
+    transition: all 0.12s ease-in;
+}
+
+.activity > div:hover{
+    background-color: rgb(240, 240, 240);
+    border-left:5px solid #628cff;
+    /* border-radius: 10px; */
+    i,h3{
+        background-color: rgb(240, 240, 240);
+        color: #628cff;
+    }
+}
